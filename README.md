@@ -13,7 +13,7 @@ https://annchoucode.github.io/2023-F2E-Legislator-Campaign-Website/
 https://www.figma.com/file/ZKKEpY1OCdJSTAG9vyeWe7/2023-F2E?node-id=89%3A13634&mode=dev
   
 ## 畫面
-
+![demo](https://raw.githubusercontent.com/AnnChouCode/image-stock/main/2023-F2E/collect-pic.png)
 
 ## 專案技術
   - Vite

@@ -1,0 +1,27 @@
+.intro {
+  &-padding {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    @include media-breakpoint-up(xl) {
+      padding: 200px 0 74px 0;
+    }
+  }
+
+  &-content-size{
+      width: 100%;
+      
+    @include media-breakpoint-up(xl) {
+      width: 332px;
+    }
+  }
+
+  &-background-web {
+    background-image: url("../images/pic/Rectangle 10_S.png");
+  }
+
+  &-background-mobile {
+    background-image: url("../images/pic/Rectangle 10_L.jpg");
+  }
+
+}

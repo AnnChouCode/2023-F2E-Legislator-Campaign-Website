@@ -1,0 +1,138 @@
+// header
+.header {
+  &-content {
+    top: 110px;
+
+    @include media-breakpoint-up(lg) {
+      top: 280px;
+    }
+  }
+
+  &-slogan {
+    width: 325px;
+
+    @include media-breakpoint-up(md) {
+      width: 578px;
+    }
+  }
+
+  &-portrait-rwd {
+    top: 198px;
+  }
+}
+
+.donate-card{
+  height: auto;
+
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    height: 288px;
+  }
+}
+
+
+// banner
+.banner {
+  background-image: url("../images/pic/Rectangle 35-s.png");
+  height: 156px;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url("../images/pic/Rectangle 35.png");
+    background-position: right;
+    height: 310px;
+  }
+
+  &-mask {
+    width: 100%;
+    height: 156px;
+    background: linear-gradient(to right, rgba(239, 239, 239, 1) 40%, rgba(239, 239, 239, 0) 100%);
+    margin-right: 40%;
+
+    @include media-breakpoint-up(lg) {
+      height: 310px;
+    }
+  }
+}
+
+// 政策議題
+.policy-pic {
+  height: 181px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(lg) {
+    height: 310px;
+  }
+
+  &bg {
+    background-color: rgba(255, 255, 255, 0.6);
+
+
+    &:hover {
+      background-color: rgba(249, 137, 80, 0.7);
+    }
+  }
+
+  &1 {
+    background-image: url("../images/pic/Rectangle 148.png");
+  }
+  &2 {
+    background-image: url("../images/pic/Rectangle 149.png");
+  }
+  &3 {
+    background-image: url("../images/pic/Rectangle 150.png");
+  }
+  &4 {
+    background-image: url("../images/pic/Rectangle 151.png");
+  }
+}
+
+
+// 照片跑馬燈
+.swiper{
+  &-wrapper {
+    transition-timing-function: linear; /* 開始到結束速度一致 */
+  }
+
+  &-slide-index {
+    padding:0 8px;
+    width: 90px;
+
+  
+    @include media-breakpoint-up(lg) {
+      padding:0 24px;
+      width: auto;
+    }
+  }
+}
+
+
+// 民眾服務信箱
+.placeholder-style::placeholder {
+  color: $gray-70;
+}
+
+.was-validated .form-control:valid, .was-validated .form-control:valid:focus, .form-control.is-valid, .form-control.is-valid:focus {
+  border: 1px solid $gray-70;
+  background-image: none;
+}
+
+.service{
+&-label{
+  width: 74px;
+  flex-shrink: 0;
+
+  @include media-breakpoint-up(lg) {
+    width: 90px;
+  }
+}
+
+&-input{
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    width: 242px;
+  }
+}
+}

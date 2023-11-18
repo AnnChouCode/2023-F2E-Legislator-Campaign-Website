@@ -1,0 +1,76 @@
+.policy-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  &1 {
+    background-image: url("../images/pic/Rectangle 148.png");
+  }
+
+  &2 {
+    background-image: url("../images/pic/Rectangle 149.png");
+  }
+
+  &3 {
+    background-image: url("../images/pic/Rectangle 150.png");
+  }
+
+  &4 {
+    background-image: url("../images/pic/Rectangle 151.png");
+  }
+
+
+  &-size {
+    height: 486px;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+      width: 50%;
+    }
+  }
+}
+
+
+.policy-list {
+  margin-left: 32px;
+
+  li::before {
+    content: "";
+    background-color: $blue-30;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 30px;
+    margin: 0 16px 0 -32px;
+  }
+}
+
+.policy-content {
+  width: 100%;
+  padding: 48px 24px;
+
+  @include media-breakpoint-up(lg) {
+    // height: 100vh;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 90px;
+    padding-left: 60px;
+  }
+
+}
+
+.swiper-button-policyset {
+  color: #fff;
+  position: initial;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  &::after {
+    content: "";
+  }
+}

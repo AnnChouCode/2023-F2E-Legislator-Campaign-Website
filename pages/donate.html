@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>鬥立翰｜堅守正義、追求共融</title>
+  <!-- OGP -->
+  <meta property="og:title" content="鬥立翰｜堅守正義、追求共融" />
+  <meta property="og:description" content="2023 F2E｜立委競選官網：堅如鬥牛 捍衛台灣未來" />
+  <meta property="og:url" content="https://annchoucode.github.io/2023-F2E-Legislator-Campaign-Website/" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+  <meta property="og:site_name" content="鬥立翰｜堅守正義、追求共融" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="鬥立翰｜堅守正義、追求共融" />
+  <meta name="twitter:description" content="2023 F2E｜立委競選官網：堅如鬥牛 捍衛台灣未來" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+
+  <link href="../assets/images/social/fav-icon.png" rel="apple-touch-icon" />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-light">
+  <%- include('./layout/nav'); -%>
+<!-- <div class="d-flex align-items-center overflow-hidden" >
+  <img class="w-100" src="../assets/images/pic/Rectangle 150_L.jpg" alt="donate banner">
+</div> -->
+<div class="w-100 donate-img bg-img-repeat-none bg-img-center bg-img-cover"></div>
+
+<div class="mw-1178 px-24 mx-auto py-48 pb-lg-60 container">
+  <h2 class="mb-32 fs-22 fs-lg-32 fw-bold lh-base">小額捐款</h2>
+  <p class="mb-32 mb-lg-60 fw-medium fs-20 lh-160">您的小筆捐款，是每隻毛孩未來的大大動力！</p>
+  <h3 class="mb-16 fs-18 fw-bold">捐款方案：</h3>
+  <ul class="row flex-column flex-md-row g-4 g-lg-14">
+    <li class="col col-md-6 col-lg-3">
+      <div class="d-flex flex-column align-items-center gap-16 py-24 bg-white rounded-20">
+        <img src="../assets/images/badge/do-champion.svg" alt="badge">
+        <h4 class="fs-24 fw-bold ls-2">鬥小將</h4>
+        <div class="text-center">
+          <p class="mb-4 fs-18">捐款新台幣600元</p>
+          <p class="text-basic-mid fs-14">已有 9957 人贊助</p>
+        </div>
+        <button type="button" class="px-20 py-6 px-md-40 py-md-12 btn btn-info btn-hoverbg-basic-light text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium">我要捐款</button>
+      </div>
+    </li>
+    <li class="col col-md-6 col-lg-3">
+      <div class="d-flex flex-column align-items-center gap-16 py-24 bg-white rounded-20">
+        <img src="../assets/images/badge/do-champion.svg" alt="badge">
+        <h4 class="fs-24 fw-bold ls-2">鬥之星</h4>
+        <div class="text-center">
+          <p class="mb-4 fs-18">捐款新台幣6,000元</p>
+          <p class="text-basic-mid fs-14">已有 2000 人贊助</p>
+        </div>
+        <button type="button" class="px-20 py-6 px-md-40 py-md-12 btn btn-info btn-hoverbg-basic-light text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium">我要捐款</button>
+      </div>
+    </li>
+    <li class="col col-md-6 col-lg-3">
+      <div class="d-flex flex-column align-items-center gap-16 py-24 bg-white rounded-20">
+        <img src="../assets/images/badge/do-champion.svg" alt="badge">
+        <h4 class="fs-24 fw-bold ls-2">鬥傳奇</h4>
+        <div class="text-center">
+          <p class="mb-4 fs-18">捐款新台幣60,000元</p>
+          <p class="text-basic-mid fs-14">已有 999 人贊助</p>
+        </div>
+        <button type="button" class="px-20 py-6 px-md-40 py-md-12 btn btn-info btn-hoverbg-basic-light text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium">我要捐款</button>
+      </div>
+    </li>
+    <li class="col col-md-6 col-lg-3">
+      <div class="d-flex flex-column align-items-center gap-16 py-24 h-100 bg-white rounded-20">
+        <img src="../assets/images/badge/do-champion.svg" alt="badge">
+        <h4 class="fs-24 fw-bold ls-2">鬥之友</h4>        
+        <p class="flex-grow-1 fs-18 text-center">自訂贊助金額</p>          
+        <button type="button" class="px-20 py-6 px-md-40 py-md-12 btn btn-info btn-hoverbg-basic-light text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium">我要捐款</button>
+      </div>
+    </li>    
+  </ul>
+</div>
+    
+
+
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+      <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script type="module" src="../main.js"></script>
+
+
+     
+
+</body>
+
+</html>

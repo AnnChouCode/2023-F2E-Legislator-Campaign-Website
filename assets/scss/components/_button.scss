@@ -1,0 +1,41 @@
+.btn-border {
+    border-width: 1.5px;
+}
+
+.btn-hoverbg-basic-light:hover {
+    background-color: $gray-20;
+    color: white;
+}
+
+.btn-hoverbg-second:hover {
+    background-color: $blue-30;
+    color: white;
+}
+
+.btn-hoverborder-basic:hover {
+    background-color: white;
+    border-color: $basic;
+    color: $basic;
+}
+
+.btn-hoverborder-info:hover {
+    background-color: white;
+    border-color: $info;
+    color: $info;
+}
+
+.btn-disable-bg {
+    background-color: $gray-60;
+    color: white;
+}
+
+.btn-disable-border {
+    border-color: $gray-60;
+    color: $gray-60;
+}
+
+.btn-changeBlock {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.50);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鬥立翰｜堅守正義、追求共融</title>
+    <!-- OGP -->
+    <meta property="og:title" content="鬥立翰｜堅守正義、追求共融" />
+    <meta property="og:description" content="2023 F2E｜立委競選官網：堅如鬥牛 捍衛台灣未來" />
+    <meta property="og:url" content="https://annchoucode.github.io/2023-F2E-Legislator-Campaign-Website/" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+    <meta property="og:site_name" content="鬥立翰｜堅守正義、追求共融" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="鬥立翰｜堅守正義、追求共融" />
+    <meta name="twitter:description" content="2023 F2E｜立委競選官網：堅如鬥牛 捍衛台灣未來" />
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+    <link href="../assets/images/social/fav-icon.png" rel="apple-touch-icon" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column vh-100 bg-light">
+    <%- include('./layout/nav'); -%>
+        <div class="flex-shrink-0 position-relative d-block d-xl-none w-100 intro-background-mobile bg-img-repeat-none bg-img-cover bg-img-center"
+            style="height: 380px;">
+            <!-- 遮罩 -->
+            <div class="position-absolute w-100" style="bottom: -48px;">
+                <div class="position-relative">
+                    <div class="w-100"
+                        style="background: linear-gradient(0deg, #D9E8FF 50%, rgba(217, 232, 255, 0.00) 100%);height: 100px;">
+                    </div>
+                    <!-- 捐款 badge -->
+                    <img class="position-absolute bottom-0 d-block d-xl-none"
+                        src="../assets/images/badge/donate-blue.svg" alt="donate badge"
+                        style="right:30px;;width:80px;height:80px;">
+                </div>
+            </div>
+
+        </div>
+        <!-- 介紹文字 -->
+        <div class="position-relative flex-grow-1 px-24 mw-1178 mx-auto w-100">
+            <!-- 捐款 badge -->
+            <img class="position-absolute d-none d-xl-block" src="../assets/images/badge/donate-white.svg"
+                alt="donate badge" style="left:390px;bottom:74px;">
+
+            <!-- 文字 -->
+            <div class="intro-padding intro-content-size">
+                <h2 class="mb-32 fs-22 fs-lg-32 fw-bold lh-base">認識鬥立翰</h2>
+                <div class="d-flex flex-column gap-16 fs-18">
+                    <p>鬥立翰在台灣這片土地長大，深感對台灣的情感。狗狗們需要人類的呵護和照顧，而狗狗也需要一位忠實的代表，一位能夠聆聽毛孩們心聲，並將這些聲音帶入立法院的代表。因此，我踏上了參選立委的征程，希望能為毛孩們帶來更好的未來。
+                    </p>
+                    <p>我堅信推動更完善的狗狗福利和相關政策，能間接地發展台灣的未來。畢竟，狗狗療育的存在能幫助改善人民身心健康，進而賺更多的錢，激發工作熱情、推動經濟，為台灣的GDP帶來巨大效益。台灣經濟發展良好，就能過上更好的生活，狗狗們也能改善生活環境，是一箭雙鵰的好事。因此，我期望能在立法院推進政策，確保狗狗和人類都能得到最大的福祉。
+                    </p>
+                    <p>護航台灣的幸福，就從照顧狗狗開始！請支持鬥立翰，讓我們攜手努力，為台灣帶來更美好的未來。</p>
+                </div>
+            </div>
+        </div>
+        <!-- 背景圖 -->
+        <div
+            class="d-none d-xl-block position-fixed top-0 z-n1 w-100 vh-100 intro-background-web bg-img-cover bg-img-repeat-none bg-img-center-right">
+            <div class="position-absolute start-0 w-100 vh-100"
+                style="background: linear-gradient(90deg, #D9E8FF 30%, rgba(217, 232, 255, 0.00) 60%);"></div>
+        </div>
+
+
+        <!-- footer -->
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>

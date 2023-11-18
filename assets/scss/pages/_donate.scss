@@ -1,0 +1,8 @@
+.donate-img{
+    background-image: url("../images/pic/Rectangle 150_L.jpg");
+    height: 166px;
+
+    @include media-breakpoint-up(lg) {
+        height: 282px;
+      }
+}

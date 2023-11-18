@@ -1,0 +1,131 @@
+//Generate utilites for Font Size
+$utilities: map-merge($utilities,
+        ("font-size": map-merge(map-get($utilities, "font-size"),
+                (responsive: true,
+                )),
+        ));
+
+//Generate utilites for Font weight
+$utilities: map-merge($utilities,
+        ("font-weight": map-merge(map-get($utilities, "font-weight"),
+                (responsive: true,
+                )),
+        ));
+
+//Generate utilites for Width
+$utilities: map-merge($utilities,
+        ("width": map-merge(map-get($utilities, "width"),
+                (responsive: true,
+                    values: map-merge(map-get(map-get($utilities, "width"), "values"),
+                        (15:15%,
+                        30:30%,
+                            40:40%,
+                            80:80%,
+                            85: 85%,
+                            90: 90%),
+                    ),
+                ),
+            ),
+        ));
+        
+//Generate utilites for Line-height
+$utilities: map-merge($utilities,
+        ("line-height": map-merge(map-get($utilities, "line-height"),
+                (class: lh,
+                responsive: true,
+                    values: map-merge(map-get(map-get($utilities, "line-height"), "values"),
+                        (
+                            140:140%,
+                            160:160%,
+                           ),
+                    ),
+                ),
+            ),
+        ));
+
+//Generate utilites for background
+$utilities: map-merge($utilities,
+        ("background-color": map-merge(map-get($utilities, "background-color"),
+                (responsive: true))));
+
+
+//Generate utilites for position
+$utilities: map-merge($utilities,
+        ("position": map-merge(map-get($utilities, "position"),
+                (responsive: true))));
+
+
+//Generate utilites for Rounded
+$utilities: map-merge($utilities,
+        ("border-radius": (property: border-radius,
+                class: rounded,
+                responsive: true,
+                values: (0: 0,
+                    1: 1px,
+                    2: 2px,
+                    3: 3px,
+                    4: 4px,
+                    5: 5px,
+                    8: 8px,
+                    10:10px,
+                    20:20px,
+                    circle: 50%,
+                    pill: var(--#{$prefix}border-radius-pill))),
+        ));
+
+
+// max-width
+.mw-1178 {
+    max-width: 1178px;
+}
+
+// letter-spacing
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+// 文字省略
+.line2-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+//背景尺寸組
+.bg-img-cover{
+    background-size: cover;
+}
+.bg-img-contain{
+    background-size:contain;
+}
+.bg-img-repeat-none{
+    background-repeat: no-repeat;
+}
+.bg-img-center{
+    background-position: center; 
+}
+.bg-img-center-right{
+    background-position: center right;
+}
+ 
+
+//背景變色效果
+.transition-bg{
+    transition: background-color 0.3s ease;
+}
+
+//背景透明
+.bg-transparent{
+    background-color: transparent;
+}
+
+//滑鼠指標
+.cursor-pointer{
+    cursor: pointer;
+}
+

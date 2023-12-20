@@ -1,0 +1,1 @@
+import"./all-11af60b9.js";import e from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";new e(".photoSwiper",{slidesPerView:"auto",speed:2e3,allowTouchMove:!1,loop:!0,autoplay:{delay:1}});

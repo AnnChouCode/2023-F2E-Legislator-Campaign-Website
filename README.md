@@ -21,3 +21,4 @@ https://www.figma.com/file/ZKKEpY1OCdJSTAG9vyeWe7/2023-F2E?node-id=89%3A13634&mo
   - Swiper
   - jQuery
   - JavaScript
+  - AOS animation

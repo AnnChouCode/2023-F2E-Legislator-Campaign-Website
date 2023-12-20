@@ -7,22 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>鬥立翰｜堅守正義、追求共融</title>
     <!-- FAVICON -->
-  <link rel="shortcut icon" href="../assets/images/social/fav-icon.png">
-  <!-- OGP -->
-  <meta property="og:title" content="2023 F2E｜立委競選官網" />
-  <meta property="og:description" content="鬥立翰｜堅守正義、追求共融" />
-  <meta property="og:url" content="https://annchoucode.github.io/2023-F2E-Legislator-Campaign-Website/" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
-  <meta property="og:site_name" content="2023 F2E｜立委競選官網" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="article" />
-  <!-- TWITTER -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="2023 F2E｜立委競選官網" />
-  <meta name="twitter:description" content="鬥立翰｜堅守正義、追求共融" />
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+    <link rel="shortcut icon" href="../assets/images/social/fav-icon.png">
+    <!-- OGP -->
+    <meta property="og:title" content="2023 F2E｜立委競選官網" />
+    <meta property="og:description" content="鬥立翰｜堅守正義、追求共融" />
+    <meta property="og:url" content="https://annchoucode.github.io/2023-F2E-Legislator-Campaign-Website/" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+    <meta property="og:site_name" content="2023 F2E｜立委競選官網" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="2023 F2E｜立委競選官網" />
+    <meta name="twitter:description" content="鬥立翰｜堅守正義、追求共融" />
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
 
-  <link href="../assets/images/social/fav-icon.png" rel="apple-touch-icon" />
+    <link href="../assets/images/social/fav-icon.png" rel="apple-touch-icon" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +42,16 @@
                         style="background: linear-gradient(0deg, #D9E8FF 50%, rgba(217, 232, 255, 0.00) 100%);height: 100px;">
                     </div>
                     <!-- 捐款 badge -->
-                    <img class="position-absolute bottom-0 d-block d-xl-none"
-                        src="../assets/images/badge/donate-blue.svg" alt="donate badge"
-                        style="right:30px;;width:80px;height:80px;">
+                    <div class="position-absolute bottom-0 d-block d-xl-none"
+                        style="left:25px;bottom:32px;">
+                        <a href="donate.html"
+                            class="position-relative d-flex justify-content-center align-items-center">
+                            <img src="../assets/images/badge/donate-blue-feet_S.svg" alt="donate"
+                                class="position-absolute">
+                            <img src="../assets/images/badge/donate-blue-circle_S.svg" alt="donate"
+                                class="self-rotate-5s">
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -50,9 +59,13 @@
         <!-- 介紹文字 -->
         <div class="position-relative flex-grow-1 px-24 mw-1178 mx-auto w-100">
             <!-- 捐款 badge -->
-            <img class="position-absolute d-none d-xl-block" src="../assets/images/badge/donate-white.svg"
-                alt="donate badge" style="left:390px;bottom:74px;">
-
+            <div class="position-absolute d-none d-xl-block"
+                style="left:390px;bottom:74px;">
+                <a href="donate.html" class="position-relative d-flex justify-content-center align-items-center">
+                    <img src="../assets/images/badge/donate-white-feet.svg" alt="donate" class="position-absolute">
+                    <img src="../assets/images/badge/donate-white-circle.svg" alt="donate" class="self-rotate-5s">
+                </a>
+            </div>
             <!-- 文字 -->
             <div class="intro-padding intro-content-size">
                 <h2 class="mb-32 fs-22 fs-lg-32 fw-bold lh-base">認識鬥立翰</h2>
@@ -75,13 +88,15 @@
 
         <!-- footer -->
         <%- include('./layout/footer'); -%>
-        
-        <!-- Bootstrap js import -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <!-- jQuery import -->
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+            <!-- Bootstrap js import -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+                crossorigin="anonymous"></script>
+
+            <!-- jQuery import -->
+            <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+                integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
 
             <script type="module" src="../main.js"></script>
 

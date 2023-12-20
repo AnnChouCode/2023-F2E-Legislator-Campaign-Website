@@ -22,3 +22,17 @@
   border-radius: 0;
   z-index:2222;
 }
+
+.nav{ 
+  &-item{
+    transition: 0.3s;
+
+    &:hover{
+      color:$blue-30;
+    }
+  }
+
+  &-list:has(.nav-item:hover) .nav-item:not(:hover){
+    color:$blue-80;
+  }
+}

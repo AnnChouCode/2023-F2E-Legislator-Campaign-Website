@@ -12,7 +12,8 @@
   <meta property="og:title" content="2023 F2E｜立委競選官網" />
   <meta property="og:description" content="鬥立翰｜堅守正義、追求共融" />
   <meta property="og:url" content="https://annchoucode.github.io/2023-F2E-Legislator-Campaign-Website/" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
   <meta property="og:site_name" content="2023 F2E｜立委競選官網" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="article" />
@@ -20,7 +21,8 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="2023 F2E｜立委競選官網" />
   <meta name="twitter:description" content="鬥立翰｜堅守正義、追求共融" />
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/AnnChouCode/2023-F2E-Legislator-Campaign-Website/main/assets/images/social/cover.jpeg" />
 
   <link href="../assets/images/social/fav-icon.png" rel="apple-touch-icon" />
 
@@ -30,6 +32,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- swiper css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- AOS animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-light">
@@ -37,34 +41,41 @@
     <!-- HEADER -->
     <header class="position-relation px-24 mw-1178 mx-auto ">
       <!-- 頭圖-大 -->
-      <img class="d-none d-lg-block ms-auto" src="../assets/images/pic/Rectangle 19.png" alt="portrait">
+      <img class="d-none d-lg-block ms-auto" src="../assets/images/pic/Rectangle 19.png" alt="portrait" data-aos="fade-left" data-aos-duration="1000">
       <div class="d-block d-lg-none position-absolute end-0 header-portrait-rwd">
         <div class="position-relative">
           <!-- 頭圖-小 -->
-          <img class="" src="../assets/images/pic/Rectangle 19-s.png" alt="portrait">
+          <img class="" src="../assets/images/pic/Rectangle 19-s.png" alt="portrait" data-aos="fade-up" data-aos-duration="1000">
           <!-- 捐款 badge -->
-          <a href="donate.html" class="d-block d-lg-none position-absolute" style="width:130px;left:25px;bottom:32px;">
-            <img src="../assets/images/badge/donate-white.svg" alt="donate">
-          </a>
+          <div class="d-block d-lg-none position-absolute"
+            style="width:130px;left:25px;bottom:32px;" data-aos="zoom-in-up" data-aos-duration="3000">
+            <a href="donate.html" class="position-relative d-flex justify-content-center align-items-center">
+              <img src="../assets/images/badge/donate-white-feet_S.svg" alt="donate" class="position-absolute">
+              <img src="../assets/images/badge/donate-white-circle_S.svg" alt="donate" class="self-rotate-5s">
+            </a>
+          </div>
         </div>
       </div>
       <!-- 手機背景 -->
       <div class="d-block d-lg-none bg-main"
         style="height: 257px;margin:555px 0px 0px -24px;border-radius: 0px 45px 0px 0px;"></div>
       <!-- slogan -->
-      <div class="position-absolute header-content pe-24 p-md-0">
+      <div class="position-absolute header-content pe-24 p-md-0" data-aos="fade-down">
         <div class="position-relative">
-          <img class="mb-24 header-slogan" src="../assets/images/text/slogan.svg" alt="slogan">
+          <img class="mb-24 header-slogan" src="../assets/images/text/slogan.svg" alt="slogan" >
           <p class="mb-24 fs-18 fw-bold">我是鬥立翰，堅守正義、追求共融，
             <span class="d-inline d-md-block">望與人類共同塑造更美好的明天。</span>
           </p>
           <a href="intro.html"
             class="px-20 py-6 px-md-40 py-md-12 btn bg-white btn-hoverbg-second text-second rounded-pill border-0 fs-14 fs-md-16">認識候選人</a>
           <!-- 捐款 badge -->
-          <a href="donate.html" class="d-none d-lg-block position-absolute"
-          style="left:285px;top: 294px;">
-            <img src="../assets/images/badge/donate-blue.svg" alt="donate">
-          </a>
+          <div class="d-none d-lg-block position-absolute"
+            style="left:285px;top: 294px;" data-aos="zoom-in-up" data-aos-duration="3000">
+            <a href="donate.html" class="position-relative d-flex justify-content-center align-items-center">
+              <img src="../assets/images/badge/donate-blue-feet.svg" alt="donate" class="position-absolute">
+              <img src="../assets/images/badge/donate-blue-circle.svg" alt="donate" class="self-rotate-5s">
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -73,18 +84,18 @@
     <div class="d-flex flex-column flex-lg-row px-24 py-40 pt-lg-80 pb-lg-60 mw-1178 mx-auto ">
       <div class="mb-40 mb-lg-0 me-0 me-lg-62">
         <!-- 小額捐款 -->
-        <div
-          class="position-relative mb-32 bg-white rounded-10 rounded-lg-20 donate-card">
-          <div class="position-lg-absolute z-1 d-flex flex-column flex-lg-row justify-content-between align-items-start py-30 px-20 py-lg-60 px-lg-40 w-100">
+        <div class="position-relative mb-32 bg-white rounded-10 rounded-lg-20 donate-card" data-aos="fade-up" data-aos-duration="1000">
+          <div
+            class="position-lg-absolute z-1 d-flex flex-column flex-lg-row justify-content-between align-items-start py-30 px-20 py-lg-60 px-lg-40 w-100">
             <div class="mb-16 mb-lg-0 me-0 me-lg-16">
               <h3 class="title-article mb-4 mb-lg-24 ls-2 lh-base fs-22 fs-md-24 fw-bold">小額捐款</h3>
               <p class="mb-4 mb-lg-24 fs-20 fw-medium text-info">您的小筆捐款，
                 <span class="d-block">是每隻毛孩未來的大大動力！</span>
               </p>
               <p class="fs-14 text-basic-mid lh-base">目前小額贊助總金額：987,655,873</p>
-            </div>          
+            </div>
             <a href="donate.html"
-              class="mt-lg-132 px-20 py-6 px-md-40 py-md-12 btn btn-info btn-hoverbg-basic-light text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium">我要捐款</a>
+              class="mt-lg-132 px-20 py-6 px-md-40 py-md-12 btn btn-info btn-hoverbg-basic-light text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium stretched-link">我要捐款</a>
           </div>
           <div class="position-absolute d-none d-md-block" style="top:24px;right:135px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="179" height="249" viewBox="0 0 179 249" fill="none">
@@ -101,7 +112,7 @@
                 stroke="#FFC4A6" stroke-miterlimit="10" />
             </svg>
           </div>
-        </div>       
+        </div>
         <!-- basic ifon -->
         <div class="d-flex flex-column gap-8">
           <h2 class="fs-28 fw-bolder text-second ls-2">鬥立翰<span class="fs-16 fw-medium">（Dog Li-Han）</span></h2>
@@ -258,7 +269,7 @@
 
     <!-- 政策議題 -->
     <div class="bg-white">
-      <div class="container mw-1178 mx-auto px-24 py-40 py-lg-80">
+      <div class="container mw-1178 mx-auto px-24 py-40 py-lg-80" data-aos="fade-up">
         <h2 class="mb-24 fs-32 fs-md-32 ls-2 lh-base">政策議題</h2>
         <ul class="row g-12">
           <li class="col-12 col-md-6">
@@ -266,7 +277,8 @@
               <div class="d-flex flex-column justify-content-center align-items-center h-100 policy-picbg">
                 <h4 class="mb-16 mb-md-24 fs-18 fs-md-22 text-center">為毛孩子謀福利！<span class="d-block">推動寵物醫療保障方案</span>
                 </h4>
-                <a href="policy.html" class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
+                <a href="policy.html"
+                  class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
               </div>
             </div>
           </li>
@@ -275,7 +287,8 @@
               <div class="d-flex flex-column justify-content-center align-items-center h-100 policy-picbg">
                 <h4 class="mb-16 mb-md-24 fs-18 fs-md-22 text-center">打造休閒天堂！<span class="d-block">推廣寵物休閒與娛樂場所</span>
                 </h4>
-                <a href="policy.html" class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
+                <a href="policy.html"
+                  class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
               </div>
             </div>
           </li>
@@ -283,7 +296,8 @@
             <div class="position-relative rounded-10 rounded-lg-20 policy-pic policy-pic3 overflow-hidden">
               <div class="d-flex flex-column justify-content-center align-items-center h-100 policy-picbg">
                 <h4 class="mb-16 mb-md-24 fs-18 fs-md-22 text-center">讓愛更專業！<span class="d-block">推廣寵物飼養教育</span></h4>
-                <a href="policy.html" class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
+                <a href="policy.html"
+                  class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
               </div>
             </div>
           </li>
@@ -291,7 +305,8 @@
             <div class="position-relative rounded-10 rounded-lg-20 policy-pic policy-pic4 overflow-hidden">
               <div class="d-flex flex-column justify-content-center align-items-center h-100 policy-picbg">
                 <h4 class="mb-16 mb-md-24 fs-18 fs-md-22 text-center">反對外貌歧視！<span class="d-block">破除寵物刻板印象</span></h4>
-                <a href="policy.html" class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
+                <a href="policy.html"
+                  class="px-20 py-6 btn btn-border btn-outline-info bg-white text-info btn-hoverborder-basic rounded-pill fs-14 fs-md-16 fw-medium stretched-link">了解更多</a>
               </div>
             </div>
           </li>
@@ -309,14 +324,22 @@
           <div class="swiper-slide swiper-slide-index">
             <img src="../assets/images/marquee/Rectangle 25.png" alt="swiper-pic">
           </div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 26.png" alt="swiper-pic"></div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 27.png" alt="swiper-pic"></div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 28.png" alt="swiper-pic"></div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 29.png" alt="swiper-pic"></div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 30.png" alt="swiper-pic"></div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 31.png" alt="swiper-pic"></div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 32.png" alt="swiper-pic"></div>
-          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 33.png" alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 26.png"
+              alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 27.png"
+              alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 28.png"
+              alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 29.png"
+              alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 30.png"
+              alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 31.png"
+              alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 32.png"
+              alt="swiper-pic"></div>
+          <div class="swiper-slide swiper-slide-index"><img src="../assets/images/marquee/Rectangle 33.png"
+              alt="swiper-pic"></div>
         </div>
       </div>
       <div class="position-absolute top-0 h-100 w-100">
@@ -337,29 +360,30 @@
           <form class="needs-validation lh-base" action="#" method="post" novalidate>
             <div class="d-flex align-items-center mb-16">
               <label for="name" class="me-8 form-label text-nowrap service-label">姓名</label>
-              <input type="text" class="p-8 form-control rounded-2 placeholder-style service-input" id="name" aria-describedby="name"
-                placeholder="請輸入您的姓名" required>              
+              <input type="text" class="p-8 form-control rounded-2 placeholder-style service-input" id="name"
+                aria-describedby="name" placeholder="請輸入您的姓名" required>
             </div>
             <div class="d-flex align-items-center mb-16">
               <label for="email" class="me-8 form-label text-nowrap service-label">Email</label>
-              <input type="email" class="p-8 form-control rounded-2 placeholder-style service-input" id="email" aria-describedby="email"
-                placeholder="abc@gmail.com" required>              
+              <input type="email" class="p-8 form-control rounded-2 placeholder-style service-input" id="email"
+                aria-describedby="email" placeholder="abc@gmail.com" required>
             </div>
             <div class="d-flex align-items-center mb-16">
               <label for="phone" class="me-8 form-label text-nowrap service-label">手機</label>
               <div class="d-flex gap-8 service-input">
-                <input type="number" class="p-8 form-control rounded-2 placeholder-style" id="phone-front" aria-describedby="phone-front"
-                placeholder="0900" maxlength="4" style="width:80px;" required>
-              <input type="number" class="p-8 form-control rounded-2 placeholder-style" id="phone-later" aria-describedby="phone-latter"
-                placeholder="000000" maxlength="6" required>
+                <input type="number" class="p-8 form-control rounded-2 placeholder-style" id="phone-front"
+                  aria-describedby="phone-front" placeholder="0900" maxlength="4" style="width:80px;" required>
+                <input type="number" class="p-8 form-control rounded-2 placeholder-style" id="phone-later"
+                  aria-describedby="phone-latter" placeholder="000000" maxlength="6" required>
               </div>
             </div>
             <div class="d-flex mb-32 mb-lg-40">
-                <label for="suggestion" class="me-8 mt-8 form-label text-nowrap service-label">您的建言</label>
-              <textarea type="number" class="p-8 form-control rounded-2 placeholder-style" id="suggestion" aria-describedby="suggestion"
-                placeholder="請輸入您的建言或問題" style="height:112px;" required></textarea>             
+              <label for="suggestion" class="me-8 mt-8 form-label text-nowrap service-label">您的建言</label>
+              <textarea type="number" class="p-8 form-control rounded-2 placeholder-style" id="suggestion"
+                aria-describedby="suggestion" placeholder="請輸入您的建言或問題" style="height:112px;" required></textarea>
             </div>
-            <button class="d-block ms-auto px-20 py-6 bg-second text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium">送出意見</button>
+            <button
+              class="d-block ms-auto px-20 py-6 bg-second text-white rounded-pill border-0 fs-14 fs-md-16 fw-medium">送出意見</button>
           </form>
         </div>
       </div>
@@ -368,41 +392,47 @@
     <!-- footer -->
     <%- include('./layout/footer'); -%>
 
-    <!-- Bootstrap js import -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      <!-- Bootstrap js import -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 
-    <!-- jQuery import -->
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+      <!-- jQuery import -->
+      <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
 
-    <script type="module" src="../main.js"></script>
+      <!-- AOS animation --> 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
-    <!-- swiper js -->
-    <script type="module">
-      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      <script type="module" src="../main.js"></script>
+      
+      <!-- swiper js -->
+      <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
-      const swiper = new Swiper(".photoSwiper", {
-        slidesPerView: "auto", // 自動計算每次滑動可容納個內容
-        speed: 2000,
-        allowTouchMove: false, //避免滑鼠互動
-        loop: true, // 最後一個自動循環
-        autoplay: {
-          delay: 1
-        }
-      });
-    </script>
-
-    <!-- 民眾服務信箱 Validation jQuery-->
-    <script>
-      $('.needs-validation').each(function (index) {
-        $(this).on('submit', function (e) {
-          e.preventDefault();
-          $(this).addClass('was-validated');
+        const swiper = new Swiper(".photoSwiper", {
+          slidesPerView: "auto", // 自動計算每次滑動可容納個內容
+          speed: 2000,
+          allowTouchMove: false, //避免滑鼠互動
+          loop: true, // 最後一個自動循環
+          autoplay: {
+            delay: 1
+          }
         });
-      });
-    </script>
+      </script>
 
-
+      <!-- 民眾服務信箱 Validation jQuery-->
+      <script>
+        $('.needs-validation').each(function (index) {
+          $(this).on('submit', function (e) {
+            e.preventDefault();
+            $(this).addClass('was-validated');
+          });
+        });
+      </script>      
 </body>
 
 </html>
